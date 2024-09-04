@@ -51,10 +51,13 @@ export default async function TicketDetails({ params }) {
           )}
         </div>
       </nav>
-      <div className="card">
-        <h3>{ticket.title}</h3>
+      <div className="bg-white shadow-sm rounded-md py-3 px-4 my-4 relative overflow-hidden
+      ">
+        <h3 className='
+        font-bold text-gray-700 text-sm mb-0
+        '>{ticket.title}</h3>
         <small>Created by {ticket.user_email}</small>
-        <p>{ticket.body}</p>
+        <p className='my-4 text-sm leading-6'> {ticket.body}</p>
         <div className={`pill ${ticket.priority}`}>
           {ticket.priority} priority
         </div>

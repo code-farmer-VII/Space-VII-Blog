@@ -1,5 +1,5 @@
-import SubmitButton from "@/app/components/SubmitButton"
-import { addTicket } from "../actions"
+import SubmitButton from "@/components/SubmitButton"
+import { addTicket } from "../action"
 
 export default function CreateForm() {
   return (

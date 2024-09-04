@@ -1,6 +1,6 @@
 "use client"
 import { useTransition } from 'react'
-import { deleteTicket } from '../actions'
+import { deleteTicket } from '../action'
 
 // icons & UI
 import { TiDelete } from 'react-icons/ti'
@@ -10,7 +10,7 @@ export default function DeleteIcon({ id }) {
 
   return (
     <button 
-      className="btn-primary" 
+      className="bg-primary text-white" 
       onClick={() => startTransition(() => deleteTicket(id))}
       disabled={isPending}
     >
