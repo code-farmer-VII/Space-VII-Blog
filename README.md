@@ -1,5 +1,4 @@
 
-```markdown
 # My Blog
 
 Welcome to the **My Blog** project! This is a personal blog built with Next.js, a popular React framework. The blog features a clean and modern design with functionalities like creating and managing posts.
