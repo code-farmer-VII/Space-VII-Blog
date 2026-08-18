@@ -1,16 +1,32 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <main>
       <h2>Dashboard</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero repellendus tempore, exercitationem odit, quasi doloremque possimus recusandae alias sequi totam soluta natus iure eius, obcaecati sint dolores blanditiis aspernatur quo officia iusto ut. Et, aliquid sed voluptates iste cum totam, facere explicabo, fugit suscipit ratione aspernatur consequuntur ex mollitia quaerat?</p>
 
-      <div className="flex justify-center my-8">
+      <div className='w-full bg-black rounded-lg flex-col md:flex-row justify-around items-center'>
+        <div>
+        <h1 className='text-center text-white text-4xl py-7 '>Share Your Idea</h1>
+          <p className='px-8 text-center pb-6'>          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius suscipit, doloremque qui, dolor corporis rerum excepturi veritatis dicta vel minus dolorem! Corrupti, quod in voluptatibus id accusamus sint adipisci maiores.
+          </p>
+          <div className="flex justify-center my-8">
         <Link href="/tickets">
-          <button className="btn-primary">View Tickets</button>
+          <button className="rounded-xl bg-[#e0f2fe] text-black hover:scale-105 transition-all ease-in-out">View Tickets</button>
         </Link>
       </div>
+        </div>
+          <Image 
+          src={require("@/components/hero_image.png")}
+          width={280}
+          height={300}
+          objectFit='cover'
+          className='rounded-xl hidden md:inline-block'
+        />
+      </div>
+
+
 
       <h2>Company Updates</h2>
 

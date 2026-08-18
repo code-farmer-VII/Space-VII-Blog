@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: #ebf0fa;
+  background: linear-gradient(90deg, #cffafe 20%, #e0f2fe 50%, #bae6fd 80%);
   @apply text-gray-500 m-8;
 }
 h1, h2 {
@@ -22,7 +22,6 @@ p > a {
 /* nav styles */
 nav {
   @apply
-    pb-4
     border-b-2 border-gray-200
     flex items-center gap-5 
     my-10 mx-auto 

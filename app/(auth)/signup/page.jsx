@@ -31,9 +31,7 @@ export default function Signup() {
 
   return (
     <main>
-      <h2 className="text-center">Sign up</h2>
-
-      <AuthForm handleSubmit={handleSubmit} />
+      <AuthForm handleSubmit={handleSubmit} title={"Sign up"}/>
 
       {error && (
                     <div className="border-2 border-red-500 bg-red-300 text-red-800 py-1 px-2 rounded-smblockmax-w-fitmy-4 mx-auto">{error}</div>
